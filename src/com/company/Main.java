@@ -1,8 +1,34 @@
 package com.company;
 
+import java.util.Scanner;
+
+// Desafio da calculadora "super complexa", que impede que o usuário...
+// entre com valores diferente dos esperados (exemplos, textos).
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	    // variável sc recebendo a criação da instância da classe newScanner.
+        // lembrando que a biblioteca é importada automaticamente no início do código.
+        var sc = new Scanner(System.in);
+
+        // variáveis d1 e d2,...responsáveis pela entrada do usuário.
+        var d1, d2;
+        // try-catch aplicado abaixo. É ele que fará o teste sobre os valores...
+        // inseridogs pelo usuário.
+        // lembrando que é o método nextDouble é o responsável por impedir...
+        // a entrada de valores diferentes de double.
+        try {
+            System.out.println("Valor 1");
+            d1 = sc.nextDouble();
+            sc.nextLine();
+
+            System.out.println("Valor 2");
+            d2 = sc.nextDouble();
+            sc.nextLine();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
+
+
