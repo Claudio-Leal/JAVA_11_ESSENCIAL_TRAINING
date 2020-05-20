@@ -1,7 +1,13 @@
 package com.company;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import com.company.utilities.CalcHelper;
+
+// Sintaxe para importar todas as classes da pasta java > util.
+// Não é a melhor prática,...os programadores preferem "documentar"...
+// as classes que estão importando.
+import java.util.*;
+//import java.util.InputMismatchException;
+//import java.util.Scanner;
 
 // Desafio da calculadora "super complexa", que impede que o usuário...
 // entre com valores diferente dos esperados (exemplos, textos).

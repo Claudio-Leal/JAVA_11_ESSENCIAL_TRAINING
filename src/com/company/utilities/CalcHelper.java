@@ -1,4 +1,4 @@
-package com.company;
+package com.company.utilities;
 
 // Aqui serão declarados 4 métodos, todos marcados como ESTÁTICOS, para que possam ser chamados da própria...
 // própria classe, e não de uma instância da classe.
