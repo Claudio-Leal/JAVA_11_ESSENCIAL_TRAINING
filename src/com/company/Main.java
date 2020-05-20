@@ -39,19 +39,19 @@ public class Main {
 
         switch (operacao){
             case "+":
-                result = d1 + d2;
+                result = CalcHelper.adittion(d1,d2);
                 break;
 
             case "-":
-                result = d1 - d2;
+                result = CalcHelper.subtraction(d1,d2);
                 break;
 
             case "*":
-                result = d1 * d2;
+                result = CalcHelper.multiplication(d1,d2);
                 break;
 
             case "/":
-                result = d1 / d2;
+                result = CalcHelper.division(d1,d2);
                 break;
 
             default:
