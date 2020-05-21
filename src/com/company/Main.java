@@ -9,7 +9,8 @@ public class Main {
         // Aqui estou instanciando a classe ClothingItem, com a declaração...
         // da variável item.
         // Observe que chamando os métodos sets.
-        var item = new ClothingItem("Shirt","M",3,19.45);
+       // Aqui, um exemplo de constante "tipo", sendo chamada através dos parâmetros.
+        var item = new ClothingItem(ClothingItem.SHIRT,"M",3,19.45);
 
         // Bloco abaixo pode ser comentado, pois agora os valores estão....
         // sendo passados pelos parâmetros do método ClothingItem.

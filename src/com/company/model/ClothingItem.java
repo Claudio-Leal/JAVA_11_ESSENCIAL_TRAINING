@@ -13,10 +13,26 @@ public class ClothingItem {
     // Com isso, métodos GETs e SETs foram criados com base nas variáveis declaradas.
     // que permaneceram no código.
 
+
     private String type;
     private String Size;
     private int quantity;
     private Double price;
+
+    // Bloco abaixo, declaração de constantes. Neste exemplo,...
+    // faremos isso porque seria difícil identificar um erro nos "valores"...
+    // passados através de parâmetros,..que identificam o tipo, tamanho, etc.
+    // Segundo o curso, se declararmos como constantes, a identificação de eventuais...
+    // problemas será facilitada.
+    // São três novas variáveis declardas,...com letras maiúsculas, pois são CONSTANTES.
+    // E note que são três strings "tipos de roupas" diferentes declarados.
+    // A ideia aqui é pegar estas constantes e utilizar na classe main,...
+    // estes valores aparecerão como constantes,...de forma que podemos chamá-los,..
+    // como se fossem classes, métodos, etc.
+    public static final String SHIRT = "Shirt";
+    public static final String PANTS = "Pants";
+    public static final String SHOES = "Shoes";
+
 
     // repare que os métodos foram declarados como públicos, o que permitirá que...
     // sejam chamados de qualquer parte da aplicação.
