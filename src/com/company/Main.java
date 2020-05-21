@@ -1,3 +1,14 @@
+/*
+Nesta última versão, ao executar o debug, vi que o código todos os valores...
+são passados para as classes "parceiras",...conforme os métodos vão sendo chamados.
+Fazendo desta forma,..conseguimos imprimir na tela o conjunto de informações de...
+// shirt e hat.
+// Conceitos de subclasse (hat e shirt), superclasse (ClothingItem),...herança...
+polimorfirmos, etc., foram mostrados aqui.
+*/
+
+
+
 package com.company;
 
 
@@ -42,6 +53,9 @@ public class Main {
     // ClothingItem: classe que aqui funciona como tipo de dado.
     // item: variável declarada mais acima,...e que receberá os valores quando o método for chamado.
     // {}: todos os comandos já declarados previamente.
+    // Variável item não está mais sendo declarada no início do código. Agora temos os itens (Shirt, Hat,...
+    // sendo especificados no código.
+    //
     private static void displayItemDetails(ClothingItem item) {
         var total = item.getPrice() * item.getQuantity();
         var formatNumber = NumberFormat.getCurrencyInstance();
