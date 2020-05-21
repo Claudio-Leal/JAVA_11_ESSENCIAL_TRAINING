@@ -9,11 +9,14 @@ public class Main {
         // Aqui estou instanciando a classe ClothingItem, com a declaração...
         // da variável item.
         // Observe que chamando os métodos sets.
-        var item = new ClothingItem();
-        item.setType("Shirt");
-        item.setSize("M");
-        item.setQuantity(3);
-        item.setPrice(19.45);
+        var item = new ClothingItem("Shirt","M",3,19.45);
+
+        // Bloco abaixo pode ser comentado, pois agora os valores estão....
+        // sendo passados pelos parâmetros do método ClothingItem.
+//        item.setType("Shirt");
+//        item.setSize("M");
+//        item.setQuantity(3);
+//        item.setPrice(19.45);
 
         // totalizando:
         // Aqui, já estou chamando os métodos gets.

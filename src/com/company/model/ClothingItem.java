@@ -24,35 +24,50 @@ public class ClothingItem {
     // String ou void: tipo de retorno esperado pelo método.
     // no caso dos métodos sets: argumento do método que passa como parâmetro, o valor...
     // da variável type.
+
+    // Trata-se de um método:
+    // public: pode ser chamado de qualquer ponto da aplicação.
+    // ClothingItem: nome do método.
+    // (): argumentos que passam como parâmetro, os valores das variáveis...
+    // através da palavra chave this.
+    // Com isso, os "sets" feitos mais abaixo, se tornam inúteis, por isso...
+    // foram comentados.
+    public ClothingItem(String type, String size, int quantity, Double price) {
+        this.type = type;
+        this.Size = size;
+        this.quantity = quantity;
+        this.price = price;
+    }
+
     public String getType() {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+//    public void setType(String type) {
+//        this.type = type;
+//    }
 
     public String getSize() {
         return Size;
     }
 
-    public void setSize(String size) {
-        Size = size;
-    }
+//    public void setSize(String size) {
+//        Size = size;
+//    }
 
     public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
+//    public void setQuantity(int quantity) {
+//        this.quantity = quantity;
+//    }
 
     public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
-    }
+//    public void setPrice(Double price) {
+//        this.price = price;
+//    }
 }
