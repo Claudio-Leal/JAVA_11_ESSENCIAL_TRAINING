@@ -46,7 +46,9 @@ public class Main {
 
     // Aqui, o método que foi criado com REFACTOR > EXTRACT > METHOD.
     // Considerações:
-    // private: não pode ser chamado de qualquer parte da aplicação.
+    // private: não pode ser chamado de qualquer parte da aplicação, apenas da classe main.
+    // static: pode ser acessado por contextos estáticos, como o que ocorre com shirt e hat,...
+    // quanod chamam este método.
     // static void: preparado para retornar vazio (métodos possuem retorno, diferente de CONSTRUCTOR METHODS).
     // displayItemDetails: nome do método, conforme inserido no quadro REFACTOR > EXTRACT > METHOD.
     // Nos argumentos:
