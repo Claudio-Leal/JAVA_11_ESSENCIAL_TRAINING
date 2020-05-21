@@ -15,7 +15,7 @@ public class ClothingItem {
 
 
     private String type;
-    private String Size;
+    private ClothingSize Size;
     private int quantity;
     private Double price;
 
@@ -48,7 +48,7 @@ public class ClothingItem {
     // através da palavra chave this.
     // Com isso, os "sets" feitos mais abaixo, se tornam inúteis, por isso...
     // foram comentados.
-    public ClothingItem(String type, String size, int quantity, Double price) {
+    public ClothingItem(String type, ClothingSize size, int quantity, Double price) {
         this.type = type;
         this.Size = size;
         this.quantity = quantity;
@@ -63,7 +63,7 @@ public class ClothingItem {
 //        this.type = type;
 //    }
 
-    public String getSize() {
+    public ClothingSize getSize() {
         return Size;
     }
 

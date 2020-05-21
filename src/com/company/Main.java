@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.model.ClothingItem;
+import com.company.model.ClothingSize;
 
 import java.text.NumberFormat;
 
@@ -10,7 +11,7 @@ public class Main {
         // da variável item.
         // Observe que chamando os métodos sets.
        // Aqui, um exemplo de constante "tipo", sendo chamada através dos parâmetros.
-        var item = new ClothingItem(ClothingItem.SHIRT,"M",3,19.45);
+        var item = new ClothingItem(ClothingItem.SHIRT, ClothingSize.G,3,19.45);
 
         // Bloco abaixo pode ser comentado, pois agora os valores estão....
         // sendo passados pelos parâmetros do método ClothingItem.
