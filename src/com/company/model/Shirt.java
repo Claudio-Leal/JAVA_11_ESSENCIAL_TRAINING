@@ -37,7 +37,18 @@ public class Shirt extends ClothingItem {
     //            Nesse caso, há uma possibilidade de ambiguidade para a JVM.
 
 
-    public Shirt(String type, ClothingSize size, int quantity, Double price) {
-        super(type, size, quantity, price);
+    // Este é o CONSTRUCTOR METHOD original:
+//    public Shirt(String type, ClothingSize size, int quantity, Double price) {
+//        super(type, size, quantity, price);
+//    }
+
+    // Uma pequena alteração precisou ser feita, já que aqui estamos tratando apenas de Shirt:
+    // em super, incluí ClothingItem.SHIRT (constante declarada na classe ClothingItem).
+    // Nos argumentos, excluí o parâmetro String type,...pois não faz mais sentido,...já que estamos...
+    // criando uma classe especificamente para definir SHIRT. Neste caso, apenas três parâmetros estão...
+    // sendo definidos nos argumentos deste CONSTRUCTOR METHOD.
+    // Por fim, esta classe passará a ser instanciada em Main.java.
+    public Shirt(ClothingSize size, int quantity, Double price) {
+        super(ClothingItem.SHIRT, size, quantity, price);
     }
 }
