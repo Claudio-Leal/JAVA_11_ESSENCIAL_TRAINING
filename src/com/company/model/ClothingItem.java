@@ -71,3 +71,20 @@ public class ClothingItem {
 //        this.price = price;
 //    }
 }
+
+/*
+O que ocorre neste novo formato:
+1 - O método clothingItem é instanciado na classe Main.
+2 - Através dos parâmetros, os valores dos parâmetros do método ClothingItem são transferidos,
+ou seja, passados para o método, na classe ClothingItem. Durante o debug, vi que a execução é
+remetida para esta classe.
+3 - Dentro da classe ClothingItem, cada variável recebe os valores que foram passados,...
+com o uso da palavra chave this.
+4 - Concluída esta etapa, a execução volta para a classe main, e inicia a execução a partir da linha...
+28, de maneira que os métodos gets são chamados.
+5 - Cada método get possui o retornos,...e estes retornos são justamente os valores armazenados...
+anteriormente pelo método ClothingItem.
+6 - Conforme os gets vão sendo chamados, a execução a partir da linha 28 vai sendo construída,...
+com idas e vindas,...pois todos os gets são chamados para concluir o input final.
+ */
+
