@@ -41,6 +41,9 @@ public class Main {
                 // 2 - Classe Main, com a passagem de ClothingSize.G nos parâmetros do CONSTRUCTOR METHOD
                 // ClothingItem.
                 // 3 - Variável Size, declarada com o novo tipo ClothingSize, recebe o valor G.
+                // 4 - Na classe ClothingSize, foram incluídas as "descrições" dos ENUNS,...
+                // então agora o retorno não é o ENUM, mas sim, a descrição dele.
+                // Para isso, dois métodos foram inseridos lá: ClothingSize e toString. 
                 item.getSize(),
                 formatNumber.format(total));
         System.out.println(output);
