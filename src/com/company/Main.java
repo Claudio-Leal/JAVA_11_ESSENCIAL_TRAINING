@@ -10,7 +10,6 @@ Lists
 e agora: Maps
 Todos são estruturas de dados.
 Maps também é uma interface,...
-
 */
 
 
@@ -38,20 +37,38 @@ public class Main {
         // new HashMap: criação de uma instância da classe HashMap. Definição no github (pullrequest).
         // não é necessário passar os parâmetros dentro dos <> do HashMap, pois isso já foi feito...
         // no Map.
+        Map<String , ClothingItem> registros = new HashMap<>();
 
-        Map<String , ClothingItem> objetos = new HashMap<>();
+        //Abaixo, o bloco em que insiro os itens do Map (muito parecido com a inserção das Listas):
+        //Utiliza-se put.
+        // A esquerda, a palavra chave (no caso uma string).
+        // A direita, o par desta palavra chave.
+        // Assim como na lista, posso inserir quantos eu desejar.
+        registros.put("shirt" , new Shirt (
+                ClothingSize.G,
+                3,
+                19.45));
 
-        var shirt = new Shirt (
-                                ClothingSize.G,
-                                3,
-                                19.45);
-        displayItemDetails(shirt);
-            var hat = new Hat(
-                                ClothingSize.M,
-                                2,
-                                21.60);
-        displayItemDetails(hat);
+        registros.put("hat" , new Hat(
+                ClothingSize.M,
+                2,
+                21.60));
 
+        // criação de uma variável para "pegar" um destes itens:
+        var item1 = registros.get("shirt");
+        displayItemDetails(item1);
+
+//         posso também varrer o Map utilizando for each:
+//         variável keys declarada, recebendo os valores chaves do Map objetos.
+//         foreach:
+//         variável key, declarada como string, recebendo os valores armazenado na variável keys.
+
+//        var keys = registros.keySet();
+//        for (String key: keys) {
+//            var objeto = registros.get(keys);
+//            displayItemDetails(objeto);
+        // for comentado por conta do erro já registrado em pull request.
+       //}
     }
     private static void displayItemDetails(ClothingItem item) {
         var total = item.getPrice() * item.getQuantity();
