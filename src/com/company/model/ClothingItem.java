@@ -1,5 +1,3 @@
-// Esta classe é SUPERCLASSE da classe Shirt.java.
-
 package com.company.model;
 
 public class ClothingItem {
